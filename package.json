@@ -1,0 +1,57 @@
+{
+  "name": "machinemodelintegrated",
+  "displayName": "machine-model-integrated",
+  "description": "A VS Code extension for integrating machine learning models into applications",
+  "version": "0.0.1",
+  "publisher": "Makarand Hinge",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "machineModelIntegrated.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "machineModelIntegrated.loadModel",
+        "title": "Load Machine Learning Model"
+    },
+    {
+        "command": "machineModelIntegrated.generateApi",
+        "title": "Generate Flask/Spring Boot API"
+    },
+    {
+        "command": "machineModelIntegrated.generateFrontend",
+        "title": "Generate Frontend Code"
+    }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
