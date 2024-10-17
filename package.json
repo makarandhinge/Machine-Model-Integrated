@@ -7,6 +7,7 @@
   "engines": {
     "vscode": "^1.94.0"
   },
+  "icon": "image/icon.png",
   "categories": [
     "Programming Languages",
     "Other"
@@ -53,5 +54,10 @@
     "typescript": "^5.6.2",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/makarandhinge/Machine-Model-Integrated.git" 
+  },
+  "homepage": "https://github.com/makarandhinge/Machine-Model-Integrated"
 }
